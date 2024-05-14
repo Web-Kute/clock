@@ -11,7 +11,7 @@ button {
   background: #333;
   color: #fff;
   border: 0;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -27,6 +27,18 @@ button {
   left: 0;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#save-colors {
+  transition-duration: 300ms;
+  background-color: tomato;
+}
+#save-colors:hover {
+  background-color: teal;
+}
 .form-input {
   margin-bottom: 20px;
 }

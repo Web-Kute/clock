@@ -12,34 +12,50 @@
 </head>
 
 <body>
-    <div class="card">
-      <h3>Clock Style</h3>
-      <form>
-        <div class="form-input">
-          <label for="face-color">Face Color</label>
-          <input type="color" value="#f4f4f4" id="face-color" />
-        </div>
-        <div class="form-input">
-          <label for="border-color">Border Color</label>
-          <input type="color" value="#800000" id="border-color" />
-        </div>
-        <div class="form-input">
-          <label for="line-color">Number Lines Color</label>
-          <input type="color" value="#000000" id="line-color" />
-        </div>
-        <div class="form-input">
-          <label for="large-hand-color">Large Hands Color</label>
-          <input type="color" value="#800000" id="large-hand-color" />
-        </div>
-        <div class="form-input">
-          <label for="second-hand-color">Second Hand Color</label>
-          <input type="color" value="#FF7F50" id="second-hand-color" />
-        </div>
+  <div class="card">
+    <h3>Clock Style</h3>
+    <form>
+      <div class="form-input">
+        <label for="face-color">Face Color</label>
+        <input type="color" value="#130f40" data-color="faceColor" id="face-color" />
+      </div>
+      <div class="form-input">
+        <label for="border-color">Border Color</label>
+        <input type="color" value="#f0932b" data-color="borderColor" id="border-color" />
+      </div>
+      <div class="form-input">
+        <label for="line-color">Number Lines Color</label>
+        <input type="color" value="#f9ca24" data-color="lineColor" id="line-color" />
+      </div>
+      <div class="form-input">
+        <label for="large-hand-color">Hour Hand Color</label>
+        <input type="color" value="#e056fd" data-color="largeHandColor" id="large-hand-color" />
+      </div>
+      <div class="form-input">
+        <label for="large-hand-color">Minute Hand Color</label>
+        <input type="color" value="#22a6b3" data-color="minuteHandColor" id="minute-hand-color" />
+      </div>
+      <div class="form-input">
+        <label for="second-hand-color">Second Hand Color</label>
+        <input type="color" value="#eb4d4b" data-color="secondHandColor" id="second-hand-color" />
+      </div>
+      <div class="form-input">
+        <label for="second-hand-color">Center</label>
+        <input type="color" value="#f6e58d" data-color="bullColor" id="bull-color" />
+      </div>
+      <nav>
         <div class="form-input">
           <button id="save-btn" type="submit">Save As Image</button>
         </div>
-      </form>
-    </div>
+        <div class="form-input">
+          <button id="save-colors" type="submit">Save Colors</button>
+        </div>
+        <div class="form-input">
+          <button id="default-color" type="submit">Set Default</button>
+        </div>
+      </nav>
+    </form>
+  </div>
   <canvas id="canvas" width="500" height="500"></canvas>
 </body>
 
