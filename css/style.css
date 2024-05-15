@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -8,28 +8,51 @@ body {
 }
 
 button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+}
+
+.save-btn {
+  padding: 10px 10px;
   background: #333;
   color: #fff;
-  border: 0;
-  padding: 10px 10px;
+  border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.save-btn:hover {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
 }
 
 .card {
+  position: relative;
   background: #f4f4f4;
-  border-left: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-radius: 7px;
   padding: 7px 20px;
-  width: 300px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-top: 20px;
+  width: 320px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 #save-colors {
@@ -38,9 +61,13 @@ nav {
 }
 #save-colors:hover {
   background-color: teal;
+  color: #fff;
+  border: 1px solid transparent;
 }
+
 .form-input {
   margin-bottom: 20px;
+  font-weight: 300;
 }
 
 label {

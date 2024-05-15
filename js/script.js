@@ -18,8 +18,8 @@ window.addEventListener('load', () => {
 
     // Setup canvas
     ctx.save(); // save the default state
-    ctx.clearRect(0, 0, 500, 500);
-    ctx.translate(250, 250); // Put 0,0 in the middle
+    ctx.clearRect(0, 0, 300, 300);
+    ctx.translate(150, 150); // Put 0,0 in the middle
     ctx.rotate(-Math.PI / 2); // Rotate clock -90deg
 
     // Set default styles
