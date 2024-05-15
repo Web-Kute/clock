@@ -142,7 +142,7 @@ window.addEventListener('load', () => {
 });
 
 function setColors(color) {
-  const select = colors !== null ? colors[color] : color;
+  colors !== null ? colors[color] : color;
 }
 
 let colors = {
